@@ -28,8 +28,8 @@ public class ClickButtonConstructorTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
         //Настройки для проверки на яндекс Браузере
-        //System.setProperty("webdriver.chrome.driver","src/test/resources/chromeDriver2/chromedriver.exe");
-        //options.setBinary("C:\\Users\\ManUtdChemp\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe");
+        //System.setProperty(StartWithYandex.YANDEX_BROWSER_DRIVERS_FILENAME,StartWithYandex.BROWSER_DRIVERS);
+        //options.setBinary(StartWithYandex.YANDEX_BROWSER_PATH);
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, 15);
         driver.get("https://stellarburgers.nomoreparties.site/");
